@@ -7,18 +7,24 @@ package hojatrabajo3;
  */
 public class Sorts {
     
+    
+    
     public void GnomeSort(){
         
     }
+    
     public void MergeSort(){
         
     }
+    
     public void QuickSort(){
         
     }
+    
     public void RadixSort(){
         
     }
+    
     public void otro(){
         
     }
