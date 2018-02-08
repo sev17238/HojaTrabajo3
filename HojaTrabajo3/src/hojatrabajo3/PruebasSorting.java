@@ -11,8 +11,10 @@ public class PruebasSorting {
     public static void main(String[] args) {
         LecturaEscritura le = new LecturaEscritura();
         Sorts sort = new Sorts();
+        GeneradorTXT txt = new GeneradorTXT();
         
-        String[] list = le.leerArchivo();
+        txt.generarNumero();
+        Comparable[] lista = le.leerArchivo();
         
         /*
         sort.GnomeSort(list);
@@ -21,9 +23,11 @@ public class PruebasSorting {
         sort.RadixSort(list);
         sort.Otro(list);*/
         
+        //sort.selectionSort(lista);
+        sort.GnomeSort(lista);
                 
-        for(int i=0;i<list.length;i++){
-            System.out.println(list[i]);
+        for(int i=0;i<lista.length;i++){
+            System.out.println(lista[i]);
         }
           
         
