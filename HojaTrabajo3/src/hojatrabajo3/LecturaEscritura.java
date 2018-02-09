@@ -7,7 +7,7 @@ import java.util.Scanner;
  * @author Cpn. Javier Garfio
  * @author Diego C-villa
  */
-public class LecturaEscritura implements Comparable {
+public class LecturaEscritura {
     private Comparable[] lista;
     
     public LecturaEscritura(){
@@ -43,9 +43,4 @@ public class LecturaEscritura implements Comparable {
             }
             return lista;
         }
-
-    @Override
-    public int compareTo(Object t) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }

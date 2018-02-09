@@ -17,14 +17,14 @@ public class PruebasSorting {
         Comparable[] lista = le.leerArchivo();
         
         /*
-        sort.GnomeSort(list);
         sort.MergeSort(list);
         sort.QuickSort(list);
         sort.RadixSort(list);
         sort.Otro(list);*/
         
         //sort.selectionSort(lista);
-        sort.GnomeSort(lista);
+        //sort.GnomeSort(lista);
+        sort.QuickSort(lista, 0, lista.length);
                 
         for(int i=0;i<lista.length;i++){
             System.out.println(lista[i]);
