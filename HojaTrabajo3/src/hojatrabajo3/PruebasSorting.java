@@ -25,17 +25,18 @@ public class PruebasSorting {
         
         
         //YA SIRVEN
-        sort.selectionSort(lista);
+        //sort.selectionSort(lista);
         //sort.GnomeSort(lista);
         //sort.MergeSort(lista);
+        sort.QuickSort(lista, 0, (int)lista.length-1);
         
         //NO SIRVEN
         //sort.RadixSort(lista);        
-        //sort.QuickSort(lista, 0, lista.length);
+        
                 
-        for(int i=0;i<lista.length;i++){
+        /*for(int i=0;i<lista.length;i++){
             System.out.println(lista[i]);
-        }
+        }*/
           
         
      

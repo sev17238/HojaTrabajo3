@@ -82,32 +82,38 @@ public class Sorts {
             a[rightEnd] = tmp[rightEnd];
     }
     
-    public void QuickSort(Comparable[] list, int izquierda, int derecha){
-        int pivote = (int)list[izquierda];
-        int i = izquierda;
-        int j = derecha;
-        int auxIntercambio;
-        while (i < j) {
-            while ((int)list[i] <= pivote && i < j) {
+    public void QuickSort(Comparable[] list, int lowerIndex, int higherIndex) {
+         
+        int i = lowerIndex;
+        int j = higherIndex;
+        
+        int pivot = (int)list[lowerIndex+(higherIndex-lowerIndex)/2];
+        
+        while (i <= j) {
+            
+            while ((int)list[i] < pivot) {
                 i++;
             }
-            while ((int)list[j] > pivote) {
+            while ((int)list[j] > pivot) {
                 j--;
             }
-            if (i < j) {
-                auxIntercambio = (int)list[i];
-                list[i] = list[j];
-                list[j] = auxIntercambio;
+            if (i <= j) {
+                exchangeNumbers(list, i, j);
+                
+                i++;
+                j--;
             }
         }
-        list[izquierda] = list[j];
-        list[j] = pivote;
-        if (izquierda < j - 1) {
-            QuickSort(list, izquierda, j - 1);
-        }
-        if (j + 1 < derecha) {
-            QuickSort(list, j + 1, derecha);
-        }
+        if (lowerIndex < j)
+            QuickSort(list, lowerIndex, j);
+        if (i < higherIndex)
+            QuickSort(list, i, higherIndex);
+    }
+ 
+    private void exchangeNumbers(Comparable[] list, int i, int j) {
+        int temp = (int)list[i];
+        list[i] = list[j];
+        list[j] = temp;
     }
     
         public int[] Radixsort( int[] a){
