@@ -51,7 +51,7 @@ public class Sorts {
 	mergeSort(a, tmp,  0,  a.length - 1);
         return a;
     }
-    private static void mergeSort(Comparable [ ] a, Comparable [ ] tmp, int left, int right){
+    private void mergeSort(Comparable [ ] a, Comparable [ ] tmp, int left, int right){
 	if( left < right ){
             int center = (left + right) / 2;
             mergeSort(a, tmp, left, center);
@@ -59,7 +59,7 @@ public class Sorts {
             merge(a, tmp, left, center + 1, right);
 	}
     }
-    private static void merge(Comparable[ ] a, Comparable[ ] tmp, int left, int right, int rightEnd )
+    private void merge(Comparable[ ] a, Comparable[ ] tmp, int left, int right, int rightEnd )
     {
         int leftEnd = right - 1;
         int k = left;
@@ -110,11 +110,7 @@ public class Sorts {
         }
     }
     
-    public void RadixSort(String[] list){
-        
-    }
-    
-        public static int[] Radixsort( int[] a){
+        public int[] Radixsort( int[] a){
         int i, m = a[0], exp = 1, n = a.length;
         int[] b = new int[10];
         for (i = 1; i < n; i++)

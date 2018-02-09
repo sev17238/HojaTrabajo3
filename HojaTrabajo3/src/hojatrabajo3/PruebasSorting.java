@@ -23,10 +23,14 @@ public class PruebasSorting {
         sort.RadixSort(list);
         sort.Otro(list);*/
         
-        //sort.selectionSort(lista);
+        
+        //YA SIRVEN
+        sort.selectionSort(lista);
         //sort.GnomeSort(lista);
-        //sort.RadixSort(list);
-        sort.MergeSort(lista);
+        //sort.MergeSort(lista);
+        
+        //NO SIRVEN
+        //sort.RadixSort(lista);        
         //sort.QuickSort(lista, 0, lista.length);
                 
         for(int i=0;i<lista.length;i++){

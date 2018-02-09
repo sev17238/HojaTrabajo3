@@ -26,7 +26,7 @@ public class GeneratorTXT {
             //flwriter = new FileWriter("C:\\Users\\javie\\Documents\\BitBucket\\Estructura de Datos\\HT 3\\HojaTrabajo3\\numeros.txt");
             //crea un buffer o flujo intermedio antes de escribir directamente en el archivo
             BufferedWriter bfwriter = new BufferedWriter(flwriter);
-            for (int i=0;i<3000;i++) {
+            for (int i=0;i<=3000;i++) {
                 //Se declara un numero aleatorio entre 1 y 3000
                 int numero = (int) (Math.random() * 3000) + 1;
                 //escribe los datos en el archivo
