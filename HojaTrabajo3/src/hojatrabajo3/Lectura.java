@@ -7,11 +7,11 @@ import java.util.Scanner;
  * @author Cpn. Javier Garfio
  * @author Diego C-villa
  */
-public class LecturaEscritura {
+public class Lectura {
     private Comparable[] lista;
     
-    public LecturaEscritura(){
-        lista = new Comparable[100]; //aqui debe ser 3001 porque sino sale index out of bounds
+    public Lectura(){
+        lista = new Comparable[3000]; //aqui debe ser 3001 porque sino sale index out of bounds
     }
     
     	/**
@@ -21,7 +21,7 @@ public class LecturaEscritura {
 	public Comparable[] leerArchivo() {
             // crea el flujo para leer desde el archivo
             //File file = new File("C:\\Users\\SDiego\\Desktop\\fichero\\datos.txt");
-            File file = new File("C:\\Users\\javie\\Documents\\BitBucket\\Estructura de Datos\\HT 3\\HojaTrabajo3\\numeros.txt");
+            File file = new File("./numeros.txt");
             Scanner scanner;
             try {
                 int i =0;   
