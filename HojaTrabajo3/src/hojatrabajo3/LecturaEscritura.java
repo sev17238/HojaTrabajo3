@@ -11,7 +11,7 @@ public class LecturaEscritura {
     private Comparable[] lista;
     
     public LecturaEscritura(){
-        lista = new Comparable[3000];
+        lista = new Comparable[3001]; //aqui debe ser 3001 porque sino sale index out of bounds
     }
     
     	/**
@@ -20,8 +20,8 @@ public class LecturaEscritura {
          */
 	public Comparable[] leerArchivo() {
             // crea el flujo para leer desde el archivo
-            //File file = new File("C:\\Users\\SDiego\\Desktop\\fichero\\datos.txt");
-            File file = new File("C:\\Users\\javie\\Documents\\BitBucket\\Estructura de Datos\\HT 3\\HojaTrabajo3\\numeros.txt");
+            File file = new File("C:\\Users\\SDiego\\Desktop\\fichero\\datos.txt");
+            //File file = new File("C:\\Users\\javie\\Documents\\BitBucket\\Estructura de Datos\\HT 3\\HojaTrabajo3\\numeros.txt");
             Scanner scanner;
             try {
                 int i =0;   

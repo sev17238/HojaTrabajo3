@@ -14,7 +14,7 @@ import java.io.IOException;
  * @author Cpn. Javier Garfio
  * @author Diego C-villa
  */
-public class GeneradorTXT {
+public class GeneratorTXT {
         
     
     public void generarNumero(){
@@ -22,8 +22,8 @@ public class GeneradorTXT {
         FileWriter flwriter = null;
 	try {
             //se debe de especificar la ruta en donde se quiere crear el archivo, al igual que su nombre.
-            //flwriter = new FileWriter("C:\\Users\\SDiego\\Desktop\\fichero\\datos.txt");
-            flwriter = new FileWriter("C:\\Users\\javie\\Documents\\BitBucket\\Estructura de Datos\\HT 3\\HojaTrabajo3\\numeros.txt");
+            flwriter = new FileWriter("C:\\Users\\SDiego\\Desktop\\fichero\\datos.txt");
+            //flwriter = new FileWriter("C:\\Users\\javie\\Documents\\BitBucket\\Estructura de Datos\\HT 3\\HojaTrabajo3\\numeros.txt");
             //crea un buffer o flujo intermedio antes de escribir directamente en el archivo
             BufferedWriter bfwriter = new BufferedWriter(flwriter);
             for (int i=0;i<3000;i++) {
