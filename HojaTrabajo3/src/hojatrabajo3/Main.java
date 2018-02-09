@@ -18,45 +18,38 @@ public class Main {
         
         Lectura le = new Lectura();
         Comparable[] lista = le.leerArchivo();
+        //le.imprimirLista(lista);
         
+        //SELECTION SORT
         Comparable[] listaSS = lista.clone();
+        listaSS = ss.selectionSort(listaSS);
+        System.out.println("Listo SELECTION SORT");
+        
+        //GNOME SORT
         Comparable[] listaGS = lista.clone();
+        listaGS = gs.GnomeSort(listaGS);
+        System.out.println("Listo GNOME SORT");
+        
+        //QUICK SORT
         Comparable[] listaQS = lista.clone();
+        listaQS = qs.QuickSort(listaQS, 0, listaQS.length-1);
+        System.out.println("Listo QUICK SORT");
+        
+        //RADIX SORT
         Comparable[] listaRS = lista.clone();
+        //listaRS = rs.Radixsort(listaRS);
+        System.out.println("Listo RADIX SORT");
+        
+        //MERGESORT
         Comparable[] listaMS = lista.clone();
+        listaMS = ms.MergeSort(listaMS);
+        System.out.println("Listo MERGE SORT");
         
-        ss.selectionSort(listaSS);
-        
-        //Sorts sort = new Sorts();
-        //GeneratorTXT txt = new GeneratorTXT();
-        
-        //txt.generarNumero();
-        
-        
-        
-        /*
-        sort.MergeSort(list);
-        sort.QuickSort(list);
-        sort.RadixSort(list);
-        sort.Otro(list);*/
-        
-        
-        //YA SIRVEN
-        //sort.selectionSort(lista);
-        //sort.GnomeSort(lista);
-        //sort.MergeSort(lista);
-        //sort.QuickSort(lista, 0, (int)lista.length-1);
-        
-        //NO SIRVEN
-        //sort.RadixSort(lista);        
-        
-                
-        /*for(int i=0;i<lista.length;i++){
-            System.out.println(lista[i]);
-        }*/
-          
-        
-     
-     
+        //IMPRIMIR
+        /*le.imprimirLista(listaSS);
+        le.imprimirLista(listaGS);
+        le.imprimirLista(listaQS);   
+        le.imprimirLista(listaRS);   
+        le.imprimirLista(listaMS);*/
     }
 }

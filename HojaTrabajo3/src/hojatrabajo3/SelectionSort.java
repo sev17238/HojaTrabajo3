@@ -7,6 +7,7 @@ package hojatrabajo3;
  */
 public class SelectionSort {
     public Comparable[] selectionSort (Comparable[] list){
+        
         int min;
         Comparable temp;
         
