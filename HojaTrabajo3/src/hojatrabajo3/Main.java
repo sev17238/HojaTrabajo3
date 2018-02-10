@@ -4,8 +4,8 @@ package hojatrabajo3;
 /**
  * Clase que instancia objetos de las clases "GeneratorTXT", "LecturaEscritura" y de "Sorts" para que con la lista
  * generada de numeros aleatorios en la primera clase se haga el ordenamiento con los metodos de la segunda.
- * @author Cpn. Javier Garfio
- * @author Diego C-villa
+ * @author Cpn. Javier Garfio 17077
+ * @author Diego C-villa 17238
  */
 public class Main {
     public static void main(String[] args) {
@@ -35,15 +35,15 @@ public class Main {
         listaQS = qs.QuickSort(listaQS, 0, listaQS.length-1);
         System.out.println("Listo QUICK SORT");
         
-        //RADIX SORT
-        Comparable[] listaRS = lista.clone();
-        //listaRS = rs.Radixsort(listaRS);
-        System.out.println("Listo RADIX SORT");
-        
         //MERGESORT
         Comparable[] listaMS = lista.clone();
         listaMS = ms.MergeSort(listaMS);
         System.out.println("Listo MERGE SORT");
+        
+        //RADIX SORT
+        Comparable[] listaRS = lista.clone();
+        listaRS = rs.radixsort(listaRS,listaRS.length);
+        System.out.println("Listo RADIX SORT");
         
         //IMPRIMIR
         /*le.imprimirLista(listaSS);

@@ -2,8 +2,9 @@
 package hojatrabajo3;
 
 /**
- *
- * @author javie
+ * Clase que implementa el metodo de ordenamiento de seleccion.
+ * @author Cpn. Javier Garfio 17077
+ * @author Diego C-villa 17238
  */
 public class SelectionSort {
     public Comparable[] selectionSort (Comparable[] list){

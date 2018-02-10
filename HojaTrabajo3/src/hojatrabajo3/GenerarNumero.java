@@ -6,8 +6,8 @@ import java.io.IOException;
 
 /**
  * Clase que genera un archivo.txt con 3000 numeros aleatorios.
- * @author Cpn. Javier Garfio
- * @author Diego C-villa
+ * @author Cpn. Javier Garfio 17077
+ * @author Diego C-villa 17238
  */
 public class GenerarNumero {
 
