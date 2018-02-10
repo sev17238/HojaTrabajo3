@@ -1,5 +1,4 @@
 
-package hojatrabajo3;
 
 import org.junit.After;
 import org.junit.AfterClass;

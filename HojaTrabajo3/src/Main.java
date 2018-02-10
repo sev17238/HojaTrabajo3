@@ -1,5 +1,5 @@
 
-package hojatrabajo3;
+
 
 /**
  * Clase que instancia objetos de las clases "GeneratorTXT", "LecturaEscritura" y de "Sorts" para que con la lista

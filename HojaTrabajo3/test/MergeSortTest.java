@@ -1,5 +1,4 @@
 
-package hojatrabajo3;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -9,13 +8,13 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Clase para la prueba unitaria de la clase SelectionSort.
+ * Clase para la prueba unitaria de la clase MergeSort.
  * @author Cpn. Javier Garfio 17077
  * @author Diego C-villa 17238
  */
-public class SelectionSortTest {
+public class MergeSortTest {
     
-    public SelectionSortTest() {
+    public MergeSortTest() {
     }
     
     @BeforeClass
@@ -35,17 +34,17 @@ public class SelectionSortTest {
     }
 
     /**
-     * Test of selectionSort method, of class SelectionSort.
+     * Test of MergeSort method, of class MergeSort.
      */
     @Test
-    public void testSelectionSort() {
-        System.out.println("selectionSort listo");
-        Comparable[] list = {3,2,5,4,1};
-        SelectionSort instance = new SelectionSort();
+    public void testMergeSort() {
+        System.out.println("MergeSort listo");
+        Comparable[] a = {3,2,5,4,1};
+        MergeSort instance = new MergeSort();
         Comparable[] expResult = {1,2,3,4,5};
-        Comparable[] result = instance.selectionSort(list);
+        Comparable[] result = instance.MergeSort(a);
         assertArrayEquals(expResult, result);
-
+        
     }
     
 }

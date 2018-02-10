@@ -1,4 +1,3 @@
-package hojatrabajo3;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

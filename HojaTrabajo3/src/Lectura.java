@@ -1,9 +1,9 @@
 
-package hojatrabajo3;
+
 import java.io.*;
 import java.util.Scanner;
 /**
- * Clase que permite la lectura de un fichero .txt guardandola en un array Comparable[].
+ * Clase que permite la lectura de un fichero .txt guardandola en un array Comparable[]..
  * @author Cpn. Javier Garfio 17077
  * @author Diego C-villa 17238
  */
