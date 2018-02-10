@@ -49,7 +49,7 @@ public class Main {
         /*le.imprimirLista(listaSS);
         le.imprimirLista(listaGS);
         le.imprimirLista(listaQS);   
-        le.imprimirLista(listaRS);   
-        le.imprimirLista(listaMS);*/
+        le.imprimirLista(listaRS);
+        le.imprimirLista(listaRS);*/
     }
 }

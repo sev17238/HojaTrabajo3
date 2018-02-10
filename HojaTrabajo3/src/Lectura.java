@@ -11,7 +11,7 @@ public class Lectura {
     private Comparable[] lista;
     
     public Lectura(){
-        lista = new Comparable[2700]; //aqui debe ser 3001 porque sino sale index out of bounds
+        lista = new Comparable[3000]; //aqui debe ser 3001 porque sino sale index out of bounds
     }
     
     	/**

@@ -12,7 +12,7 @@ public class GenerarNumero {
 
     
     public static void main(String[] args) {
-        int can = 2700;
+        int can = 3000;
         
         //se declara el objeto para crear el archivo
         FileWriter flwriter = null;
@@ -24,7 +24,11 @@ public class GenerarNumero {
             BufferedWriter bfwriter = new BufferedWriter(flwriter);
             for (int i=0;i<can;i++) {
                 //Se declara un numero aleatorio entre 1 y 3000
+                
+                
                 int numero = (int) (Math.random() * can) + 1;
+                
+
                 //escribe los datos en el archivo
                 String numstr = Integer.toString(numero);
                 bfwriter.write(numstr);
