@@ -4,6 +4,7 @@
  * Clase que implementa el metodo de ordenamiento de Gnome.
  * @author Cpn. Javier Garfio 17077
  * @author Diego C-villa 17238
+ * https://en.wikibooks.org/wiki/Algorithm_Implementation/Sorting/Gnome_sort
  */
 public class GnomeSort {
     public Comparable[] GnomeSort(Comparable[] list){        
